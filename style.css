@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,600;1,300&display=swap');
+body{
+    font-size: 15px;
+    font-family: 'Josefin Sans', sans-serif;
+    overflow: hidden;
+}
+#firstp{
+    font-size: 68px;
+    font-weight: 600;
+    
+}
+#we{
+    color: hsl(0, 93%, 68%);
+    font-style:italic ;
+    font-weight: 400;
+}
+strong{
+    text-transform: uppercase;
+}
+p{
+   width: 75%;
+   font-weight: 400;
+    color: hsl(0, 93%, 68%);
+    font-size: 20px;
+    font-weight: 300;
+}
+#image img{
+    overflow: hidden;
+    height: 100%;
+    width: 600px;
+}
+#mail-part{
+    width: 70%;
+}
+button{
+    width: 70px;
+    border-radius: 10px;
+    background-color: hsl(0, 93%, 68%) !important;
+    color: white; 
+    display: flex;
+    align-items: center;    
+}
+.arrow{
+    visibility: visible;
+    
+}
+.error{
+    visibility: hidden;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        overflow: auto;
+    }
+    p{
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+    nav{
+        margin-top: 20px;
+        left: 0px;
+        width: 100%;
+        text-align: center;
+        order: -2;
+    }
+    #mail-part{
+        margin: 20px 0;
+        width: 100%;
+    }
+    #image img{
+       background-image: url(./images/hero-mobile.jpg) no-repeat center  cover;
+       height:200px;
+       width: 100%;
+       overflow: scroll;
+    }
+    #image {
+        order: -1;
+    }
+    
+}
+
+
